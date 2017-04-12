@@ -1,0 +1,35 @@
+[12-Apr-2017 13:11:44 America/Sao_Paulo] PHP Catchable fatal error:  Argument 1 passed to Slim\Slim::add() must be an instance of Slim\Middleware, instance of Closure given, called in /home/siteperformatric/public_html/demo/api/index.php on line 41 and defined in /home/siteperformatric/public_html/demo/api/vendor/slim/slim/Slim/Slim.php on line 1267
+[12-Apr-2017 13:12:05 America/Sao_Paulo] PHP Catchable fatal error:  Argument 1 passed to Slim\Slim::add() must be an instance of Slim\Middleware, instance of Closure given, called in /home/siteperformatric/public_html/demo/api/index.php on line 41 and defined in /home/siteperformatric/public_html/demo/api/vendor/slim/slim/Slim/Slim.php on line 1267
+[12-Apr-2017 13:26:57 America/Sao_Paulo] PHP Catchable fatal error:  Argument 1 passed to Slim\Slim::add() must be an instance of Slim\Middleware, instance of Closure given, called in /home/siteperformatric/public_html/demo/api/index.php on line 28 and defined in /home/siteperformatric/public_html/demo/api/vendor/slim/slim/Slim/Slim.php on line 1267
+[12-Apr-2017 13:27:37 America/Sao_Paulo] PHP Fatal error:  Uncaught exception 'InvalidArgumentException' with message 'Route callable must be callable' in /home/siteperformatric/public_html/demo/api/vendor/slim/slim/Slim/Route.php:178
+Stack trace:
+#0 /home/siteperformatric/public_html/demo/api/vendor/slim/slim/Slim/Route.php(107): Slim\Route->setCallable(NULL)
+#1 /home/siteperformatric/public_html/demo/api/vendor/slim/slim/Slim/Slim.php(441): Slim\Route->__construct('/:name+', NULL, true)
+#2 /home/siteperformatric/public_html/demo/api/vendor/slim/slim/Slim/Slim.php(531): Slim\Slim->mapRoute(Array)
+#3 /home/siteperformatric/public_html/demo/api/index.php(24): Slim\Slim->options('/:name+')
+#4 {main}
+  thrown in /home/siteperformatric/public_html/demo/api/vendor/slim/slim/Slim/Route.php on line 178
+[12-Apr-2017 13:27:43 America/Sao_Paulo] PHP Fatal error:  Uncaught exception 'InvalidArgumentException' with message 'Route callable must be callable' in /home/siteperformatric/public_html/demo/api/vendor/slim/slim/Slim/Route.php:178
+Stack trace:
+#0 /home/siteperformatric/public_html/demo/api/vendor/slim/slim/Slim/Route.php(107): Slim\Route->setCallable(NULL)
+#1 /home/siteperformatric/public_html/demo/api/vendor/slim/slim/Slim/Slim.php(441): Slim\Route->__construct('/:name+', NULL, true)
+#2 /home/siteperformatric/public_html/demo/api/vendor/slim/slim/Slim/Slim.php(531): Slim\Slim->mapRoute(Array)
+#3 /home/siteperformatric/public_html/demo/api/index.php(24): Slim\Slim->options('/:name+')
+#4 {main}
+  thrown in /home/siteperformatric/public_html/demo/api/vendor/slim/slim/Slim/Route.php on line 178
+[12-Apr-2017 13:34:04 America/Sao_Paulo] PHP Fatal error:  Uncaught exception 'InvalidArgumentException' with message 'Route callable must be callable' in /home/siteperformatric/public_html/demo/api/vendor/slim/slim/Slim/Route.php:178
+Stack trace:
+#0 /home/siteperformatric/public_html/demo/api/vendor/slim/slim/Slim/Route.php(107): Slim\Route->setCallable(NULL)
+#1 /home/siteperformatric/public_html/demo/api/vendor/slim/slim/Slim/Slim.php(441): Slim\Route->__construct('/tarefa/:name+', NULL, true)
+#2 /home/siteperformatric/public_html/demo/api/vendor/slim/slim/Slim/Slim.php(531): Slim\Slim->mapRoute(Array)
+#3 /home/siteperformatric/public_html/demo/api/index.php(24): Slim\Slim->options('/tarefa/:name+')
+#4 {main}
+  thrown in /home/siteperformatric/public_html/demo/api/vendor/slim/slim/Slim/Route.php on line 178
+[12-Apr-2017 13:37:53 America/Sao_Paulo] PHP Fatal error:  Uncaught exception 'InvalidArgumentException' with message 'Route callable must be callable' in /home/siteperformatric/public_html/demo/api/vendor/slim/slim/Slim/Route.php:178
+Stack trace:
+#0 /home/siteperformatric/public_html/demo/api/vendor/slim/slim/Slim/Route.php(107): Slim\Route->setCallable(NULL)
+#1 /home/siteperformatric/public_html/demo/api/vendor/slim/slim/Slim/Slim.php(441): Slim\Route->__construct('/tarefa/:name+', NULL, true)
+#2 /home/siteperformatric/public_html/demo/api/vendor/slim/slim/Slim/Slim.php(531): Slim\Slim->mapRoute(Array)
+#3 /home/siteperformatric/public_html/demo/api/index.php(24): Slim\Slim->options('/tarefa/:name+')
+#4 {main}
+  thrown in /home/siteperformatric/public_html/demo/api/vendor/slim/slim/Slim/Route.php on line 178
