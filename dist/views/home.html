@@ -1,0 +1,47 @@
+<div class="row marketing">
+  <div class="col-sm-5">
+    <h3>Minha lista de tarefas <button class="btn btn-primary btn-sm btn-new-task pull-right" ng-click="vm.newTask()">Nova tarefa</button></h3>
+    <ul class="list-unstyled">
+      <li ng-repeat="task in vm.tasks">
+        <div class="checkbox">
+          <label class="center-block">
+            <input type="checkbox" ng-model="task.status" ng-true-value="1" ng-false-value="0">
+            <span class="clearfix center-block">{{task.titulo}}<button class="btn btn-default btn-xs pull-right" ng-click="vm.editTask(task)">Editar</button></span>
+            <p class="text-muted clearfix" ng-if="task.descricao"><small class="pull-left">{{task.descricao}}</small> <time class="pull-right">{{vm.formatDate(task.datacriacao) | date : 'dd/MM/yyyy HH:mm:ss'}}</time></p>
+          </label>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div class="col-sm-7">
+    <h3>{{vm.task.id ? 'Editar tarefa' : 'Criar tarefa'}}</h3>
+    <div class="panel panel-default">
+      <form ng-submit="vm.saveTask()">
+        <div class="panel-heading text-muted text-right" ng-if="vm.task.datacriacao">
+          <small>Criada em: {{vm.formatDate(vm.task.datacriacao) | date: 'dd/MM/yyyy HH:mm:ss'}}</small>
+          <div ng-show="vm.task.dataedicao"><small>Última atualização em: {{vm.formatDate(vm.task.dataedicao) | date: 'dd/MM/yyyy HH:mm:ss'}}</small></div>
+          <div ng-show="vm.task.dataconclusao && vm.task.status"><small>Concluída em: {{vm.formatDate(vm.task.dataconclusao) | date: 'dd/MM/yyyy HH:mm:ss'}}</small></div>
+        </div>
+        <div class="panel-body">
+          <div class="form-group">
+            <label for="titulo">Título</label>
+            <input type="text" class="form-control" id="titulo" name="titulo" placeholder="Informe um título para a tarefa" ng-model="vm.task.titulo" required>
+          </div>
+          <div class="form-group">
+            <label for="descricao">Descrição (opcional)</label>
+            <textarea class="form-control" id="descricao" name="descricao" rows="3" placeholder="Informe detalhes sobre a tarefa" ng-model="vm.task.descricao"></textarea>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" ng-model="vm.task.status" ng-true-value="1" ng-false-value="0"> Tarefa concluída
+            </label>
+          </div>
+        </div>
+        <div class="panel-footer">
+          <button type="submit" class="btn btn-success">{{vm.task.id ? 'Salvar tarefa' : 'Criar tarefa'}}</button>
+          <button type="button" class="btn btn-link" ng-if="vm.task.id" ng-click="vm.deleteTask(vm.task.id)">Excluir tarefa</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
