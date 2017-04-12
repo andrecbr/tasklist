@@ -1,12 +1,20 @@
-# tasklist
+# Task List
 
-This project is generated with [yo angular generator](https://github.com/yeoman/generator-angular)
-version 0.16.0.
+Este projeto foi gerado utilizando o serviço de scaffolding Yeoman com [yo angular generator](https://github.com/yeoman/generator-angular)
+versão 0.16.0 e AngularJS 1.
 
-## Build & development
+## Build & desenvolvimento
 
-Run `grunt` for building and `grunt serve` for preview.
+Execute `gulp build` para gerar a aplicação dentro da pasta `dist` e `gulp serve` para gerar a pré-visualização (via browser).
 
-## Testing
+## Front-end
 
-Running `grunt test` will run the unit tests with karma.
+Os arquivos front-end se encontram nesta própria estrutura.
+
+## Back-end
+
+Os arquivos back-end se encontram dentro da pasta /api, mas estão hospedados (assim como o preview do sistema) em um servidor próprio (performatric.com.br).
+
+## Demo
+
+[demo.performatric.com.br/tasklist](http://demo.performatric.com.br/tasklist)
