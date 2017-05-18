@@ -7,10 +7,10 @@ $config['addContentLengthHeader'] = false;
 
 $db['conn'] 	= null;
 
-$db['host']   = "179.188.17.121";
-$db['user']   = "siteperf_cliente";
-$db['pass']   = "CL13nt3$$$";
-$db['dbname'] = "siteperf_clientes";
+$db['host']   = "XXX.XXX.XXX.XXX";
+$db['user']   = "user";
+$db['pass']   = "password";
+$db['dbname'] = "database";
 
 $app = new \Slim\Slim($config);
 
